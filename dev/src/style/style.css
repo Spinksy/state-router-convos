@@ -1,0 +1,14 @@
+div.meta-data {
+    height: 100%;
+    border: 1px solid green;
+}
+
+div.conversation-content {
+    height: 100%;
+    border: 1px solid red;
+}
+
+div.conversation-components {
+    height: 100%;
+    border: 1px solid blue;
+}

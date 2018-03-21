@@ -1,0 +1,28 @@
+{
+  "name": "conversations",
+  "version": "1.0.0",
+  "description": "Conversations App Shell",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run copy && concat-glob-cli -f src/app/**/*.js -o ./dev/src/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dev/*",
+    "copy": "copyfiles --flat src/index.html ./dev/src/ && copyfiles --flat src/vendor/*.js ./dev/src/vendor/ && copyfiles --flat ./src/style/*.css ./dev/src/style/ && copyfiles src/app/**/*.html ./dev/"
+  },
+  "author": "Glenn Spinks",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "angular-ui-bootstrap": "^0.14.3",
+    "bootstrap": "3.3.7",
+    "concat-glob-cli": "^0.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.15",
+    "@uirouter/visualizer": "^6.0.0",
+    "concat": "^1.0.3",
+    "copyfiles": "^2.0.0"
+  }
+}
